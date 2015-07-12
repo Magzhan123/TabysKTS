@@ -1,0 +1,55 @@
+{% extends "base.html" %} 
+{% load crispy_forms_tags %} 
+{% block title_head %} Welcome | {% endblock %}
+{% block jumbatron_content %}
+{% if not request.user.is_authenticated %}
+  <div class="jumbotron" style="background-color: #0E3D14; color: #FFF; margin-bottom: 0px !important;">
+    <div class="row">
+      <div class= 'col-sm-6'>
+        <h1>Classroom SDU</h1>
+        <p>  Students can keep track of what’s due on the Assignments page and begin working with just a click. Teachers can quickly see who has or hasn't completed the work, and provide direct, real-time feedback and grades right in Classroom.</p>
+          <p>
+           <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Join Us &raquo;</a>
+          </p>
+        </div>
+        <div class="col-sm-6" style="background-color:black; min-height:300px;">
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  {% endblock %}
+
+ {%  block content  %}
+ {% if request.user.is_authenticated  %}
+ <h1> You are loged in! </h1>
+ <div class="panel panel-success">
+   <div class="panel-heading"><h2> Welcom to Staff </h2></div>
+    {% if queryset %}
+      <table class='table table-bordered table-hover'>
+         {% for instance in queryset %}
+         <tr><td>{{ forloop.counter }}</td><td>{{ instance }}</td><td> {{ instance.full_name }}</td><td>{{ instance.timestamp|timesince }} ago</td></tr>
+         {% endfor %}
+       </table>
+  </div>
+ {% endif %}
+ {% else %}
+ <div class ="row">
+    <div class="col-sm-3 pull-right">
+        <h1>{{ title }}</h1>
+          <form method='POST' action=''>{% csrf_token %}
+            {{ form|crispy }}
+            <input class="btn btn-primary" type='submit' value='Sign Up'/>
+          </form>
+       </div>
+       <div class='col-sm-3'>
+       <p class="lead" id="align"> Buit with Django &amp; Bootstrap </p>
+       </div>
+       <div class='col-sm-3'>
+       <p class="lead" id="align" > Created for Starters of all kinds </p>
+       </div>
+       <div class='col-sm-3'>
+       <p class="lead" id="align"> Always Open Source </p>
+       </div>
+  </div>
+  {% endif %}
+{% endblock %}  

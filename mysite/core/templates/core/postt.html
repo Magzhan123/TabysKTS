@@ -1,0 +1,43 @@
+{% extends "core/blogs.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    {% for post in posts.object_list %}
+        <div class="cont span_2_of_3" style="border-bottom: solid #8C8C8C 1px">
+            <div class="grid images_3_of_2">
+                <ul id="etalage">
+                    <li>
+                        <a href="#">
+                            <img class="etalage_thumb_image" src="{{ MEDIA_URL }}{{ post.main_image }}" class="img-responsive" />
+                        </a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="desc1 span_3_of_2">
+            <p class="m_5">{{ post.title }}</p>
+            <h3 class="m_3">{{ post.created }}</h3>
+            <p class="m_text2">{{ post.body }}</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    {% endfor %}
+    <div class="clear"></div>
+    {% if posts.object_list and posts.paginator.num_pages > 1 %}
+        <div class="pagination" style="margin-top: 20px; margin-left: -20px; ">
+            <span class="step-links">
+                {% if posts.has_previous %}
+                    <a href= "?page={{ posts.previous_page_number }}">предыдущая страница &lt; </a>
+                {% endif %}
+
+                <span class="current">
+                    &nbsp;Страница {{ posts.number }} из {{ posts.paginator.num_pages }}
+                </span>
+
+                {% if posts.has_next %}
+                    <a href="?page={{ posts.next_page_number }}"> &gt; следующая страница</a>
+                {% endif %}
+            </span>
+        </div>
+    {% endif %}
+{% endblock %}

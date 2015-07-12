@@ -1,0 +1,42 @@
+<ul>
+	{% for product in products %}
+	    <li>{{ product.title }}
+	    <img src="{{ MEDIA_URL }}/{{ product.main_image}}" height="200">
+	    </li>
+	{% empty %}
+	    <li>Sorry, no products in this list.</li>
+	{% endfor %}
+</ul>
+
+
+{% for product in products %}
+<tr class="{% cycle 'top-box' '' '' as top_box %}">
+    {% if top_box == 'top-box' %}
+		<div class="top-box">
+	{% endif %}
+</tr>
+<div class="col_1_of_3 span_1_of_3">
+	<a href="{% url 'single' %}">
+		<div class="inner_content clearfix">
+			<div class="product_image">
+				<img src="{{ MEDIA_URL }}{{ product.main_image }}" alt=""/>
+			</div>
+			<div class="price">
+				<div class="cart-left">
+					<p class="title">{{ product.title }}</p>
+					<div class="price1">
+						<span class="actual">{{ product.title }}</span>
+					</div>
+				</div>
+				<div class="cart-right"> </div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<tr class="{% cycle '' '' 'top-box' as top_box %}">
+    {% if top_box == 'top-box' or forloop.last %}
+    </div>
+	{% endif %}
+</tr>
+{% endfor %}

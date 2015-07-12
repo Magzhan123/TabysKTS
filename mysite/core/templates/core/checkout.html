@@ -1,0 +1,286 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Информация товаров </title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/form.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/font-awesome-animation.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/font-awesome-animation.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="{% static 'js/jquery1.min.js' %}"></script>
+<!-- start menu -->
+<link href="{% static 'css/megamenu.css' %}" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="{% static 'js/megamenu.js' %}"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<!--start slider -->
+    <link rel="stylesheet" href="{% static 'css/fwslider.css' %}" media="all">
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/css3-mediaqueries.js' %}"></script>
+    <script src="{% static 'js/fwslider.js' %}"></script>
+<!--end slider -->
+<script src="{% static 'js/jquery.easydropdown.js' %}"></script>
+</head>
+<body>
+     <div class="header-top">
+     <div class="wrap"> 
+        <div class="header-top-left">
+             <div class="box">
+                <select tabindex="4" class="dropdown">
+              <option value="" class="label" value="">Язык :</option>
+              <option value="1">Қазақша</option>
+              <option value="2">Руский</option>
+              </select>
+              </div>
+              <div class="clear"></div>
+         </div>
+       <div class="cssmenu">
+        <ul>
+        <li class="active"><a href="{% url 'checkout' %}"><i class="fa fa-info fa-lg"></i> Информация товаров</a></li> |
+          <li class="active grid"><a href="{% url 'login' %}"> <i class="fa fa-sign-in fa-lg"></i> Вход</a></li> |
+          <li><a href="{% url 'registration_register' %}"><i class="fa fa-user-secret fa-lg"></i> Регистрация</a></li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="header-bottom">
+      <div class="wrap">
+      <div class="header-bottom-left">
+        <div class="logo">
+          <a href="index.html"><img  src="{% static 'images/logoa.png' %}" alt=""/></a>
+        </div>
+        <div class="menu">
+              <ul class="megamenu skyblue">
+              <li><a href="index.html"><i class="fa fa-home fa-lg"></i>  Домой</a></li>
+      <li><a class="color4" href="#"><i class="fa fa-gift fa-lg"></i> Товары</a>
+        <div class="megapanel">
+          <div class="row">
+            <div class="col1">
+              <div class="h_nav">
+                <h4>Contact Lenses</h4>
+                <ul>
+                  <li><a href="womens.html">Daily-wear soft lenses</a></li>
+                  <li><a href="womens.html">Extended-wear</a></li>
+                  <li><a href="womens.html">Lorem ipsum </a></li>
+                  <li><a href="womens.html">Planned replacement</a></li>
+                </ul> 
+              </div>              
+            </div>
+            <div class="col1">
+              <div class="h_nav">
+                <h4>Sun Glasses</h4>
+                <ul>
+                  <li><a href="womens.html">Heart-Shaped</a></li>
+                  <li><a href="womens.html">Square-Shaped</a></li>
+                  <li><a href="womens.html">Round-Shaped</a></li>
+                  <li><a href="womens.html">Oval-Shaped</a></li>
+                </ul> 
+              </div>              
+            </div>
+            <div class="col1">
+              <div class="h_nav">
+                <h4>Eye Glasses</h4>
+                <ul>
+                  <li><a href="womens.html">Anti Reflective</a></li>
+                  <li><a href="womens.html">Aspheric</a></li>
+                  <li><a href="womens.html">Bifocal</a></li>
+                  <li><a href="womens.html">Hi-index</a></li>
+                  <li><a href="womens.html">Progressive</a></li>
+                </ul> 
+              </div>                        
+            </div>
+            </div>
+          </div>
+        </li>       
+        <li><a class="color5" href="{% url 'about' %}"> <i class="fa fa-child fa-lg"></i> О нас</a>
+        <div class="megapanel">
+          <div class="col1">
+              <div class="h_nav">
+                <h4>Contact Lenses</h4>
+                <ul>
+                  <li><a href="mens.html">Daily-wear soft lenses</a></li>
+                  <li><a href="mens.html">Extended-wear</a></li>
+                  <li><a href="mens.html">Lorem ipsum </a></li>
+                  <li><a href="mens.html">Planned replacement</a></li>
+                </ul> 
+              </div>              
+            </div>
+            <div class="col1">
+              <div class="h_nav">
+                <h4>Sun Glasses</h4>
+                <ul>
+                  <li><a href="mens.html">Heart-Shaped</a></li>
+                  <li><a href="mens.html">Square-Shaped</a></li>
+                  <li><a href="mens.html">Round-Shaped</a></li>
+                  <li><a href="mens.html">Oval-Shaped</a></li>
+                </ul> 
+              </div>              
+            </div>
+            <div class="col1">
+              <div class="h_nav">
+                <h4>Eye Glasses</h4>
+                <ul>
+                  <li><a href="mens.html">Anti Reflective</a></li>
+                  <li><a href="mens.html">Aspheric</a></li>
+                  <li><a href="mens.html">Bifocal</a></li>
+                  <li><a href="mens.html">Hi-index</a></li>
+                  <li><a href="mens.html">Progressive</a></li>
+                </ul> 
+              </div>                        
+            </div>
+          </div>
+        </li>
+        <li><a class="color6" href="other.html"> <i class="fa fa-tty fa-lg"></i> Обратная связь</a></li>
+        <li><a class="color7" href="other.html"> <i class="fa fa-file-text fa-lg"></i> Услуги</a></li>
+        <li><a class="color7" href="other.html"> <i class="fa fa-bullhorn fa-lg"></i> Новости</a></li>
+      </ul>
+      </div>
+    </div>
+     <div class="header-bottom-right">
+         <div class="search">   
+        <input type="text" name="s" class="textbox" value="Поиск" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск';}">
+        <input type="submit" value="Subscribe" id="submit" name="submit">
+        <div id="response"> </div>
+     </div>
+    <div class="tag-list">
+      <ul class="icon1 sub-icon1 profile_img">
+      <li><a class="active-icon c1" href="#"> </a>
+        <ul class="sub-icon1 list">
+          <li><h3>Вы можете оплатить</h3><a href=""></a></li>
+          <li><p>  <a href=""> Kiwi кашелек</a></p></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="icon1 sub-icon1 profile_img">
+      <li><a class="active-icon c2" href="#"> </a>
+        <ul class="sub-icon1 list">
+          <li><h3>Товары нет</h3><a href=""></a></li>
+          <li><p>Выберите товары  <a href="">добавтье корзину</a></p></li>
+        </ul>
+      </li>
+    </ul>
+      <ul class="last"><li><a href="#">Товар(0)</a></li></ul>
+    </div>
+    </div>
+     <div class="clear"></div>
+     </div>
+  </div>
+         <div class="register_account">
+           <div class="wrap">
+    	     <h4 class="title">ВАШ КАШЕЛЕК ПУСТА</h4>
+    	     <p class="cart">Вы можете восстанавить<br>Нажать<a href=""> Здесь</a> и продолжаете делать покупки</p>
+    	   </div>
+    	</div>
+    <div class="footer">
+		<div class="footer-top">
+			<div class="wrap">
+			  <div class="section group example">
+				<div class="col_1_of_2 span_1_of_2">
+					<ul class="f-list">
+					  <li><span class="f-text"> <span class="fa-stack fa-lg">
+					  <i class="fa fa-circle fa-stack-2x"></i>
+					  <i class="fa fa-truck faa-float animated fa-stack-1x fa-inverse" style="color:#39A0B9;"></i></span>   
+					  Межгород всего лишь 3 дня</span><div class="clear"></div></li>
+					</ul>
+				</div>
+				<div class="col_1_of_2 span_1_of_2">
+					<ul class="f-list">
+					  <li><span class="f-text"> <span class="fa-stack fa-lg">
+						  <i class="fa fa-circle fa-stack-2x"></i>
+						  <i class="fa fa-phone  faa-tada animated fa-stack-1x fa-inverse" style="color:#39A0B9;"></i></span>  
+						   Звоните сейчас!-(+727)327 33 66 </span><div class="clear"></div></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+		      </div>
+			</div>
+		</div>
+		<div class="footer-middle">
+	      <div class="wrap">      
+	       <div class="section group example">
+	        <div class="col_1_of_f_1 span_1_of_f_1">
+	         <div class="section group example">
+	           <div class="col_1_of_f_2 span_1_of_f_2">
+	              <h3>ПОДПИСАТЬСЯ</h3>
+	             <input id="modlgn_username" type="text" name="email" class="inputbox" size="10" value="Ваш электронный почта" style="color:#B8B8B8" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Ваш электронный почта';}">
+	            <div class="button1">
+					   <a href="register.html"><input type="submit" name="Submit" style="background-color:lightblue;" placeholder="Ваш эл. почта" value="ПОДПИСАТЬСЯ"></a>
+					 </div>
+	          </div>
+	          <div class="col_1_of_f_2 span_1_of_f_2">
+	            <h3>НАША ЦЕЛЬ</h3>
+	               <div class="recent-tweet">
+	              <div class ="recent-tweet-icon">
+	                <span class="fa-stack fa-lg">
+						  <i class="fa fa-circle fa-stack-2x" style="color:#FFF;"></i>
+						  <i class="fa fa-dot-circle-o faa-burst animated fa-stack-1x fa-inverse" style="color:#39A0B9;"></i>
+					</span>
+	              </div>
+	              <div class="recent-tweet-info">
+	                <p>Наша цель, чтобы удовлетворить интересы покупателя. <a href="#"> Продажа товаров высокого качества</a></p>
+	              </div>
+	              <div class="clear"> </div>
+	             </div>
+	        </div>
+	        <div class="clear"></div>
+	          </div>
+	       </div>
+	       <div class="col_1_of_f_1 span_1_of_f_1">
+	         <div class="section group example">
+	         <div class="col_1_of_f_2 span_1_of_f_2">
+	            <h3>Мы В СОЦЕТЯХ</h3>
+	            <ul id="ds" style="color:#FFF;">
+	                    <li><span class="fa-stack fa-lg">
+						  <i class="fa fa-circle fa-stack-2x" style="color:#FFF;"></i>
+						  <i class="fa fa-facebook faa-shake animated fa-stack-1x fa-inverse" style="color:#39A0B9;"></i>
+						</span><a href="#" style="color:#FFF;">Facebook</a></li>
+	                    <li><span class="fa-stack fa-lg">
+						  <i class="fa fa-circle  fa-stack-2x" style="color:#FFF;"></i>
+						  <i class="fa fa-vk faa-shake animated fa-stack-1x fa-inverse" style="color:#39A0B9;"></i>
+						</span><a href="#" style="color:#FFF;">Vk</a></li>
+	                     <li><span class="fa-stack fa-lg">
+						  <i class="fa fa-circle fa-stack-2x" style="color:#FFF;"></i>
+						  <i class="fa fa-instagram faa-shake animated fa-stack-1x fa-inverse" style="color:#39A0B9;"></i>
+						</span><a href="#" style="color:#FFF;">Instagram</a></li>
+	                </ul>
+	         </div>
+	         <div class="col_1_of_f_2 span_1_of_f_2">
+	           <h3>Наш адрес</h3>
+	            <div class="company_address">
+	                        <p>город Алматы, Ауезовский район</p>
+	                        <p>улица Б.Момышұлы 12, блок А</p>
+	                        <p>Телефон:(+772)322 66 44</p>
+	                        <p>Факс: (000) 000 00 00 0</p>
+	                        <p>Эл почта: <span>Tshop@gmail.com</span></p>
+	             </div>
+	        </div>
+	        <div class="clear"></div>
+	        </div>
+	       </div>
+	      <div class="clear"></div>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="footer-bottom">
+	      <div class="wrap">
+	               <div class="copy">
+	               <p>© 2015 Xlab  <a href="http://w3layouts.com" target="_blank"><i class="fa fa-heart faa-pulse animated" style="color:red"></i> Django Framework</a></p>
+	             </div>
+	        <div class="f-list2">
+	         <ul>
+	           <li class="active"><a href="{% url 'about' %}">О нас</a></li> |
+	          <li><a href="delivery.html">Услуги</a></li> |
+	          <li><a href="{% url 'contact' %}">Контакты</a></li> 
+	         </ul>
+	          </div>
+	          <div class="clear"></div>
+	          </div>
+	       </div>
+	  </div>
+	</body>
+	</html>

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block jumbatron_content %}
+	<div class='row'>
+		<div class='col-sm-12'>
+			<h1 id='align'> {{ title }}</h1>
+		</div>
+	</div>
+    <div class='row'>
+        <div class='col-sm-6 col-sm-offset-3'>
+			<form method='POST' action=''>{% csrf_token %}
+					{{ form|crispy}}
+					<input class="btn btn-info" type='submit' value='Submit' />		
+			</form>
+	    </div>
+	</div>
+{% endblock %}
