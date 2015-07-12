@@ -1,0 +1,7 @@
+/* line 2, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailusers/static/wagtailusers/scss/groups_edit.scss */
+.listing .field label {
+  display: none; }
+
+/* line 5, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailusers/static/wagtailusers/scss/groups_edit.scss */
+.listing input, .listing select, .listing textarea {
+  font-size: 1em; }

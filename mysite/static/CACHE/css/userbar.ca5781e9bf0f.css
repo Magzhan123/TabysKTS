@@ -1,0 +1,613 @@
+/* paths */
+/* We can't use absolute paths here, because those are dependent on Django's
+STATIC_URL setting. However, django-compressor consistently places the compiled
+CSS into ${STATIC_URL}/CACHE/css/ regardless of compilation mode, so we can
+reliably use relative paths to get back to STATIC_URL. */
+/* grid settings */
+/* screen breakpoints */
+/* 800px */
+/* 900px */
+/* 1200px */
+/* 1600px */
+/* colours */
+/* darker to lighter */
+/* misc sizing */
+/* line 92, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/mixins.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+  /* line 83, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/mixins.scss */
+  .visuallyhidden:active, .visuallyhidden:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto; }
+
+/* line 105, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/mixins.scss */
+.visuallyvisible {
+  clip: none;
+  height: auto;
+  width: auto;
+  margin: auto;
+  overflow: visible;
+  position: initial; }
+
+/* line 1, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon.teal {
+  color: #43b1b0; }
+
+/* line 4, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon.white {
+  color: white; }
+
+/* line 12, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon:before,
+.icon:after,
+.hallotoolbar [class^="icon-"],
+.hallotoolbar [class*=" icon-"]:before,
+.hallotoolbar [class^="icon-"]:before {
+  font-family: "wagtail";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none !important;
+  speak: none;
+  text-decoration: none;
+  width: 1.3em;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  vertical-align: middle;
+  margin-right: 0.2em; }
+
+/* line 30, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon:after,
+.hallotoolbar [class^="icon-"]:after,
+.hallotoolbar [class^="icon-"]:after {
+  text-align: right; }
+
+/* line 37, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.hallotoolbar [class^="icon-"],
+.hallotoolbar [class*=" icon-"]:before,
+.hallotoolbar [class*=" icon-"]:before,
+.hallotoolbar [class^="icon-"]:before {
+  vertical-align: -10%;
+  margin-right: 0; }
+
+/* line 43, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-cogs:before {
+  content: "a"; }
+
+/* line 46, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-doc-empty-inverse:before {
+  content: "b"; }
+
+/* line 49, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-doc-empty:before {
+  content: "c"; }
+
+/* line 52, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-edit:before {
+  content: "d"; }
+
+/* line 56, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-arrow-up:before,
+.icon-arrow-up-after:after {
+  content: "e"; }
+
+/* line 60, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-arrow-down:before,
+.icon-arrow-down-after:after {
+  content: "q"; }
+
+/* line 63, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-search:before {
+  content: "f"; }
+
+/* line 66, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-cross:before {
+  content: "g"; }
+
+/* line 69, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-folder-open-1:before {
+  content: "i"; }
+
+/* line 72, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-folder-inverse:before {
+  content: "j"; }
+
+/* line 75, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-mail:before {
+  content: "k"; }
+
+/* line 78, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-arrows-up-down:before {
+  content: "l"; }
+
+/* line 81, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-locked:before {
+  content: "m"; }
+
+/* line 85, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-arrow-right:before,
+.icon-arrow-right-after:after {
+  content: "n"; }
+
+/* line 89, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-doc-full:before,
+.icon-file-text-alt:before {
+  content: "h"; }
+
+/* line 93, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-image:before,
+.icon-picture:before {
+  content: "o"; }
+
+/* line 96, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-unlocked:before {
+  content: "p"; }
+
+/* line 99, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-doc-full-inverse:before {
+  content: "r"; }
+
+/* line 102, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-folder:before {
+  content: "s"; }
+
+/* line 105, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-plus:before {
+  content: "t"; }
+
+/* line 108, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-tag:before {
+  content: "u"; }
+
+/* line 111, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-folder-open-inverse:before {
+  content: "v"; }
+
+/* line 114, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-cog:before {
+  content: "w"; }
+
+/* line 117, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-tick:before {
+  content: "x"; }
+
+/* line 120, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-user:before {
+  content: "y"; }
+
+/* line 123, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-arrow-left:before {
+  content: "z"; }
+
+/* line 126, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-tick-inverse:before {
+  content: "A"; }
+
+/* line 129, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-plus-inverse:before {
+  content: "B"; }
+
+/* line 132, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-snippet:before {
+  content: "D"; }
+
+/* line 135, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-wagtail:before {
+  content: "V"; }
+
+/* line 138, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-wagtail-inverse:before {
+  content: "0"; }
+
+/* line 141, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-bold:before {
+  content: "C"; }
+
+/* line 144, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-italic:before {
+  content: "E"; }
+
+/* line 147, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-undo:before {
+  content: "H"; }
+
+/* line 150, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-repeat:before {
+  content: "I"; }
+
+/* line 153, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-list-ol:before {
+  content: "G"; }
+
+/* line 156, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-list-ul:before {
+  content: "F"; }
+
+/* line 159, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-link:before {
+  content: "J"; }
+
+/* line 162, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-radio-full:before {
+  content: "K"; }
+
+/* line 165, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-radio-empty:before {
+  content: "L"; }
+
+/* line 168, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-arrow-up-big:before {
+  content: "M"; }
+
+/* line 171, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-arrow-down-big:before {
+  content: "N"; }
+
+/* line 174, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-group:before {
+  content: "O"; }
+
+/* line 177, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-media:before {
+  content: "P"; }
+
+/* line 181, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-horizontalrule:before {
+  font-family: Open Sans,Arial,sans-serif !important;
+  content: "\2014"; }
+
+/* line 186, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-password:before {
+  content: "Q"; }
+
+/* line 189, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-download:before {
+  content: "S";
+  /* Credit: Icon made by Freepik from Flaticon.com */ }
+
+/* line 192, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-order:before {
+  content: "T"; }
+
+/* line 195, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-grip:before {
+  content: "U"; }
+
+/* line 198, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-home:before {
+  content: "W"; }
+
+/* line 201, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-order-down:before {
+  content: "X"; }
+
+/* line 204, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-order-up:before {
+  content: "Y"; }
+
+/* line 207, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-bin:before {
+  content: "Z"; }
+
+/* line 210, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-spinner:after {
+  width: 1em;
+  animation: spin 0.5s infinite linear;
+  -webkit-animation: spin 0.5s infinite linear;
+  -moz-animation: spin 0.5s infinite linear;
+  content: "1"; }
+
+/* line 217, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-pick:before {
+  content: "2"; }
+
+/* line 220, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-redirect:before {
+  content: "3"; }
+
+/* line 224, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-view:before,
+.icon-no-view:before {
+  vertical-align: -3.5px;
+  font-size: 1.1rem; }
+
+/* line 228, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-view:before {
+  content: "4"; }
+
+/* line 231, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-no-view:before {
+  content: "^"; }
+
+/* line 234, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-collapse-down:before {
+  content: "5"; }
+
+/* line 237, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-collapse-up:before {
+  content: "6"; }
+
+/* line 240, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-date:before {
+  content: "7"; }
+
+/* line 243, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-time:before {
+  content: "8"; }
+
+/* line 246, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-success:before {
+  content: "9"; }
+
+/* line 249, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-help:before {
+  content: "?"; }
+
+/* line 252, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-warning:before {
+  content: "!"; }
+
+/* line 255, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-form:before {
+  content: "$"; }
+
+/* line 258, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon-site:before {
+  content: "@"; }
+
+/* line 262, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon.text-replace {
+  font-size: 0em;
+  line-height: 0;
+  overflow: hidden; }
+  /* line 267, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+  .icon.text-replace:before {
+    margin-right: 0;
+    font-size: 1rem;
+    display: inline-block;
+    width: 100%;
+    line-height: 1.2em;
+    text-align: center;
+    vertical-align: middle; }
+
+/* line 278, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/components/icons.scss */
+.icon.icon-larger:before {
+  font-size: 1.5em; }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../wagtailadmin/scss/fonts/OpenSans-Light-webfont.eot");
+  src: url("../../wagtailadmin/scss/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../../wagtailadmin/scss/fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("../../wagtailadmin/scss/fonts/OpenSans-Light-webfont.svg#opensans_italic_webfont") format("svg"), url("../../wagtailadmin/scss/fonts/OpenSans-Light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../wagtailadmin/scss/fonts/OpenSans-Regular-webfont.eot");
+  src: url("../../wagtailadmin/scss/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../wagtailadmin/scss/fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../../wagtailadmin/scss/fonts/OpenSans-Regular-webfont.svg#opensans_regular_webfont") format("svg"), url("../../wagtailadmin/scss/fonts/OpenSans-Regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../wagtailadmin/scss/fonts/OpenSans-Semibold-webfont.eot");
+  src: url("../../wagtailadmin/scss/fonts/OpenSans-Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../wagtailadmin/scss/fonts/OpenSans-Semibold-webfont.ttf") format("truetype"), url("../../wagtailadmin/scss/fonts/OpenSans-Semibold-webfont.svg#opensans_semibold_webfont") format("svg"), url("../../wagtailadmin/scss/fonts/OpenSans-Semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../wagtailadmin/scss/fonts/OpenSans-Bold-webfont.eot");
+  src: url("../../wagtailadmin/scss/fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../wagtailadmin/scss/fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("../../wagtailadmin/scss/fonts/OpenSans-Bold-webfont.svg#opensans_bold_webfont") format("svg"), url("../../wagtailadmin/scss/fonts/OpenSans-Bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Bitter";
+  src: url("../../wagtailadmin/scss/fonts/Bitter-Regular.eot");
+  src: url("../../wagtailadmin/scss/fonts/Bitter-Regular.eot?#iefix") format("embedded-opentype"), url("../../wagtailadmin/scss/fonts/Bitter-Regular.ttf") format("truetype"), url("../../wagtailadmin/scss/fonts/Bitter-Regular.svg#Bitter-Regular") format("svg"), url("../../wagtailadmin/scss/fonts/Bitter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Bitter";
+  src: url("../../wagtailadmin/scss/fonts/Bitter-Bold.eot");
+  src: url("../../wagtailadmin/scss/fonts/Bitter-Bold.eot?#iefix") format("embedded-opentype"), url("../../wagtailadmin/scss/fonts/Bitter-Bold.ttf") format("truetype"), url("../../wagtailadmin/scss/fonts/Bitter-Bold.svg#Bitter-Bold") format("svg"), url("../../wagtailadmin/scss/fonts/Bitter-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "wagtail";
+  src: url("../../wagtailadmin/scss/fonts/wagtail.eot");
+  src: url("../../wagtailadmin/scss/fonts/wagtail.eot?#iefix") format("embedded-opentype"), url("../../wagtailadmin/scss/fonts/wagtail.ttf") format("truetype"), url("../../wagtailadmin/scss/fonts/wagtail.svg#wagtail") format("svg"), url("../../wagtailadmin/scss/fonts/wagtail.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* fix to make chrome on windows use svg, which renders better */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "wagtail";
+    src: url("../../wagtailadmin/scss/fonts/wagtail.svg#wagtail") format("svg"); } }
+
+/* line 8, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+html, body {
+  background-color: transparent; }
+
+/* line 11, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  /* Do not remove! */
+  font-family: Open Sans,Arial,sans-serif;
+  font-size: 80%; }
+
+/* line 17, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+nav {
+  padding: 0 0 3em 3em;
+  float: right;
+  /* moving menu only for browser that can support hover and transitions */ }
+  /* line 23, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+  .no-touch .ready nav ul {
+    height: 0; }
+  /* line 26, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+  .no-touch .ready nav li {
+    left: 50px; }
+  /* line 31, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+  .no-touch .ready nav:hover ul {
+    height: 300px; }
+  /* line 34, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+  .no-touch .ready nav:hover li {
+    left: 0; }
+
+/* line 41, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+.home {
+  width: 3.5em;
+  height: 3.5em;
+  margin-bottom: 1px;
+  background-color: white;
+  color: #666666;
+  padding: 0; }
+  /* line 49, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+  .home.icon:before {
+    font-size: 35px;
+    margin: 0.2em 0.15em;
+    display: block; }
+    /* line 25, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/mixins.scss */
+    body.ready .home.icon:before {
+      -webkit-transition: color 0.2s ease;
+      -moz-transition: color 0.2s ease;
+      -o-transition: color 0.2s ease;
+      transition: color 0.2s ease; }
+  /* line 56, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+  .home:hover:before {
+    color: black; }
+
+/* line 61, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+ul {
+  overflow: hidden;
+  clear: both; }
+  /* line 25, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/mixins.scss */
+  body.ready ul {
+    -webkit-transition: height 0.2s ease;
+    -moz-transition: height 0.2s ease;
+    -o-transition: height 0.2s ease;
+    transition: height 0.2s ease; }
+  /* line 13, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/mixins.scss */
+  ul, ul ul, ul li {
+    list-style-type: none;
+    font-style: normal; }
+  /* line 17, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/mixins.scss */
+  ul, ul ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0; }
+
+/* line 68, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+li {
+  float: right;
+  clear: both;
+  width: 3.5em;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 1px; }
+  /* line 25, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/mixins.scss */
+  body.ready li {
+    -webkit-transition: left 0.2s ease, width 0.1s ease;
+    -moz-transition: left 0.2s ease, width 0.1s ease;
+    -o-transition: left 0.2s ease, width 0.1s ease;
+    transition: left 0.2s ease, width 0.1s ease; }
+  /* line 77, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+  li:hover {
+    width: 10em; }
+
+/* all items or pseudo-items must float right */
+/* line 83, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+li, .home {
+  float: right; }
+
+/* line 87, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+.action {
+  background-color: #43b1b0;
+  color: #43b1b0; }
+  /* line 25, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/mixins.scss */
+  body.ready .action {
+    -webkit-transition: background-color 0.2s ease, color 0.2s ease;
+    -moz-transition: background-color 0.2s ease, color 0.2s ease;
+    -o-transition: background-color 0.2s ease, color 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease; }
+  /* line 92, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+  .action:before {
+    margin-right: 0.4em;
+    vertical-align: middle;
+    font-size: 1.7em;
+    color: white; }
+  /* line 99, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+  .action:hover {
+    background-color: #246060;
+    color: white; }
+
+/* actions which can be accomplished just with a link tag */
+/* line 106, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+a.action, a {
+  display: block;
+  width: 10em;
+  text-align: left;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.85em 1em; }
+
+/* actions which require wrapping a form input */
+/* line 118, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+div.action input {
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  /* Do not remove! */
+  font-family: Open Sans,Arial,sans-serif;
+  border: 0;
+  background: none;
+  display: block;
+  text-transform: uppercase;
+  padding: 1em;
+  width: 10em;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  padding-left: 3.5em; }
+
+/* line 133, /home/magzhan/Desktop/trydjango/local/lib/python2.7/site-packages/wagtail/wagtailadmin/static/wagtailadmin/scss/userbar.scss */
+div.action:before {
+  position: absolute;
+  top: 0.4em;
+  left: 0.5em;
+  z-index: 0; }
